@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Abdulrahman Amr – Full Stack Developer & .NET Developer. Building scalable web applications with ASP.NET Core, SQL Server, and modern web technologies.">
+  <meta name="keywords" content="Abdulrahman Amr, Full Stack Developer, .NET Developer, ASP.NET Core, Portfolio">
+  <meta name="author" content="Abdulrahman Amr">
+  <title>Abdulrahman Amr — Full Stack Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================
+       LOADING SCREEN
+       ============================================ -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader">
+      <div class="loader-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="loader-text">Loading Portfolio</div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       BACKGROUND EFFECTS
+       ============================================ -->
+  <div class="bg-gradient-orbs">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
+  <div class="particles" id="particles"></div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">AA<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active" data-section="hero">Home</a></li>
+        <li><a href="#about" data-section="about">About</a></li>
+        <li><a href="#skills" data-section="skills">Skills</a></li>
+        <li><a href="#projects" data-section="projects">Projects</a></li>
+        <li><a href="#experience" data-section="experience">Experience</a></li>
+        <li><a href="#education" data-section="education">Education</a></li>
+        <li><a href="#certificates" data-section="certificates">Certificates</a></li>
+        <li><a href="#contact" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="theme-toggle" id="themeToggle" role="button" tabindex="0" aria-label="Toggle theme">
+          <div class="toggle-thumb">
+            <span id="themeIcon">🌙</span>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          Abdulrahman <span class="gradient-text">Amr</span>
+        </h1>
+        <div class="hero-title">
+          <span class="typing-text" id="typingText"></span>
+        </div>
+        <p class="hero-description">
+          Motivated Computer Science student crafting scalable full-stack web applications with ASP.NET Core &amp; SQL
+          Server. Passionate about clean architecture, problem-solving, and building systems that make a real impact.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <i class='bx bx-envelope'></i> Get In Touch
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <i class='bx bx-code-alt'></i> View Projects
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/AbdoSakr444" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a href="https://www.linkedin.com/in/abdulrahman-amr-681466250" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="mmailto:abdulrahmanamrsakr@gmail.com" aria-label="Email">
+            <i class='bx bx-envelope'></i>
+          </a>
+          <a href="tel:+201144760277" aria-label="Phone">
+            <i class='bx bx-phone'></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-ring"></div>
+          <div class="hero-avatar-ring-2"></div>
+          <div class="hero-avatar">AA</div>
+          <!-- Floating Tech Icons -->
+          <div class="floating-icon">⚡</div>
+          <div class="floating-icon">🔷</div>
+          <div class="floating-icon">🛠️</div>
+          <div class="floating-icon">💾</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get To Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image-card">
+            <div class="about-image-inner">
+              <div class="about-avatar">AA</div>
+              <div class="about-stats">
+                <div class="stat-card">
+                  <div class="stat-number" data-count="2">0</div>
+                  <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" data-count="18">0</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" data-count="6">0</div>
+                  <div class="stat-label">Months Exp</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <h3>Full Stack .NET Developer</h3>
+          <p>
+            I'm a motivated Computer Science student at the University of Sadat City with hands-on experience in
+            developing full-stack web applications using <strong>ASP.NET Core</strong> and <strong>SQL Server</strong>.
+            I specialize in building scalable systems, applying clean architecture principles, and integrating RESTful
+            APIs.
+          </p>
+          <p>
+            I'm experienced in delivering real-world projects, with a strong focus on problem-solving and continuous
+            learning. My background includes an <strong>Honorable Mention at ICPC ECPC Qualifications</strong> and
+            completion of <strong>18 programming courses</strong> covering a wide range of topics from data structures
+            to database management.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <div class="info-icon"><i class='bx bx-user'></i></div>
+              <div class="info-text">
+                <div class="label">Name</div>
+                <div class="value">Abdulrahman Amr</div>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <div class="info-icon"><i class='bx bx-envelope'></i></div>
+              <div class="info-text">
+                <div class="label">Email</div>
+                <div class="value">abdulrahmanamrsakr@gmail.com</div>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <div class="info-icon"><i class='bx bx-map'></i></div>
+              <div class="info-text">
+                <div class="label">Location</div>
+                <div class="value">Sadat City, Egypt</div>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <div class="info-icon"><i class='bx bx-phone'></i></div>
+              <div class="info-text">
+                <div class="label">Phone</div>
+                <div class="value">+20 114 476 0277</div>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <div class="info-icon"><i class='bx bxl-github'></i></div>
+              <div class="info-text">
+                <div class="label">GitHub</div>
+                <div class="value">abdulrahmanamr</div>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <div class="info-icon"><i class='bx bxl-linkedin'></i></div>
+              <div class="info-text">
+                <div class="label">LinkedIn</div>
+                <div class="value">abdulrahmanamr</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SKILLS SECTION
+       ============================================ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">What I Work With</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">💻</div>
+            <h3 class="skill-category-title">Programming Languages</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-tag"><span class="skill-dot"></span>C#</span>
+            <span class="skill-tag"><span class="skill-dot"></span>C++</span>
+            <span class="skill-tag"><span class="skill-dot"></span>SQL</span>
+            <span class="skill-tag"><span class="skill-dot"></span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Frameworks & Technologies -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">⚙️</div>
+            <h3 class="skill-category-title">Frameworks & Technologies</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-tag"><span class="skill-dot"></span>.NET Framework</span>
+            <span class="skill-tag"><span class="skill-dot"></span>.NET Core</span>
+            <span class="skill-tag"><span class="skill-dot"></span>ASP.NET Core MVC</span>
+            <span class="skill-tag"><span class="skill-dot"></span>ASP.NET Web API</span>
+            <span class="skill-tag"><span class="skill-dot"></span>EF Core</span>
+            <span class="skill-tag"><span class="skill-dot"></span>ADO.NET</span>
+            <span class="skill-tag"><span class="skill-dot"></span>WinForms</span>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🌐</div>
+            <h3 class="skill-category-title">Web Development</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-tag"><span class="skill-dot"></span>HTML5</span>
+            <span class="skill-tag"><span class="skill-dot"></span>CSS3</span>
+            <span class="skill-tag"><span class="skill-dot"></span>JavaScript</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Razor Pages</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Database Management -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🗄️</div>
+            <h3 class="skill-category-title">Database Management</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-tag"><span class="skill-dot"></span>SQL</span>
+            <span class="skill-tag"><span class="skill-dot"></span>MS SQL Server</span>
+            <span class="skill-tag"><span class="skill-dot"></span>T-SQL</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Database Design</span>
+            <span class="skill-tag"><span class="skill-dot"></span>LINQ</span>
+          </div>
+        </div>
+
+        <!-- Tools & Version Control -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🔧</div>
+            <h3 class="skill-category-title">Tools & Version Control</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-tag"><span class="skill-dot"></span>Git</span>
+            <span class="skill-tag"><span class="skill-dot"></span>GitHub</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Postman</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Swagger</span>
+          </div>
+        </div>
+
+        <!-- Concepts & Soft Skills -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🧠</div>
+            <h3 class="skill-category-title">Concepts & Soft Skills</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-tag"><span class="skill-dot"></span>OOP</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Data Structures</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Algorithms</span>
+            <span class="skill-tag"><span class="skill-dot"></span>SOLID Principles</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Design Patterns</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Problem Solving</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Team Work</span>
+            <span class="skill-tag"><span class="skill-dot"></span>Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROJECTS SECTION
+       ============================================ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">My Recent Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: LIFE LINE -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">🏥</div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="Live Demo" target="_blank" rel="noopener noreferrer">
+                <i class='bx bx-link-external'></i>
+              </a>
+              <a href="#" class="project-link" title="Source Code" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github'></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Graduation Project</span>
+              <span class="project-tag">Full Stack</span>
+              <span class="project-tag">ML</span>
+            </div>
+            <h3 class="project-title">LIFE LINE – Medical Decision Support System</h3>
+            <p class="project-description">
+              A full-stack medical web application to assist healthcare professionals in early disease detection.
+              Features include ML-powered predictions (Heart, Diabetes), patient data management, emergency access with
+              40% faster retrieval, DNA profiling with 35% improved matching, and an AI-powered medical assistant.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">ASP.NET MVC</span>
+              <span class="project-tech">SQL Server</span>
+              <span class="project-tech">EF Core</span>
+              <span class="project-tech">REST APIs</span>
+              <span class="project-tech">HTML/CSS/JS</span>
+              <span class="project-tech">Identity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: E-Learning Platform -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg, #8b5cf6, #06b6d4);">
+            <div class="project-image-placeholder">📚</div>
+            <div class="project-overlay">
+              <a href="https://e-learnix.runasp.net/" class="project-link" title="Live Demo" target="_blank"
+                rel="noopener noreferrer">
+                <i class='bx bx-link-external'></i>
+              </a>
+              <a href="https://github.com/AbdoSakr444/Learnix-E-Learning-Platform-" class="project-link"
+                title="Source Code" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github'></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">DEPI Project</span>
+              <span class="project-tag">Full Stack</span>
+              <span class="project-tag">E-Learning</span>
+            </div>
+            <h3 class="project-title">Learnix – E-Learning Platform</h3>
+            <p class="project-description">
+              A comprehensive e-learning platform with role-based authentication, instructor dashboards for managing
+              courses &amp; students, RESTful API integration, and support for 10+ users with multiple courses. Built
+              with SOLID principles and design patterns.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">.NET 8</span>
+              <span class="project-tech">ASP.NET Core MVC</span>
+              <span class="project-tech">EF Core</span>
+              <span class="project-tech">SQL Server</span>
+              <span class="project-tech">LINQ</span>
+              <span class="project-tech">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EXPERIENCE SECTION
+       ============================================ -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Where I've Worked</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">
+              <i class='bx bx-calendar'></i> 06/2025 – 12/2025
+            </span>
+            <h3 class="timeline-title">Full-Stack .NET Trainee</h3>
+            <p class="timeline-subtitle">DEPI (Digital Egypt Pioneers Initiative)</p>
+            <p class="timeline-location">
+              <i class='bx bx-map'></i> Shebin El Kom, Al Minufiyah, Egypt
+            </p>
+            <ul class="timeline-description">
+              <li>Completed intensive training in Software Engineering and .NET development, mastering core concepts and
+                practical application.</li>
+              <li>Built real-world web applications using ASP.NET Core MVC, Entity Framework Core, and SQL Server.</li>
+              <li>Implemented authentication and authorization using ASP.NET Core Identity.</li>
+              <li>Applied clean architecture principles and design patterns such as Repository and Service Layer.</li>
+              <li>Collaborated in a team environment to design and develop a full-stack project (Learnix E-Learning
+                Platform).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EDUCATION SECTION
+       ============================================ -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">My Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="education-card reveal">
+        <div class="education-icon">🎓</div>
+        <h3 class="education-degree">Bachelor of Computer Science</h3>
+        <p class="education-university">University of Sadat City</p>
+        <p class="education-status"
+          style="color: var(--accent-secondary); font-weight: 500; margin-bottom: 14px; font-size: 0.9rem;">In Progress
+        </p>
+        <span class="education-date">
+          <i class='bx bx-calendar'></i> Oct 2022 — Jul 2026
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CERTIFICATES SECTION
+       ============================================ -->
+  <section class="certificates" id="certificates">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Continuous Learning</span>
+        <h2 class="section-title">Courses & <span class="gradient-text">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="certificates-grid">
+        <div class="certificate-card reveal">
+          <div class="certificate-icon">📜</div>
+          <h3 class="certificate-title">18 Programming Courses — Programming Advices</h3>
+          <p class="certificate-description">
+            Completed 18 comprehensive programming courses covering Problem Solving, Algorithms, Data Structures, C++,
+            C#, OOP, .NET Framework, and Database Management.
+          </p>
+        </div>
+
+        <div class="certificate-card reveal">
+          <div class="certificate-icon">🏆</div>
+          <h3 class="certificate-title">ICPC ECPC Qualifications — Honorable Mention</h3>
+          <p class="certificate-description">
+            Awarded an Honorable Mention in the ICPC ECPC Qualifications (Day 2, July 2024) for solving complex
+            algorithmic problems under time constraints and collaborating effectively within a team.
+          </p>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="section-header reveal" style="margin-top: 80px;">
+        <span class="section-subtitle">Communication</span>
+        <h2 class="section-title">My <span class="gradient-text">Languages</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="languages-grid reveal">
+        <div class="language-card">
+          <span class="language-flag">🇪🇬</span>
+          <div>
+            <div class="language-name">Arabic</div>
+            <div class="language-level">Native</div>
+          </div>
+        </div>
+        <div class="language-card">
+          <span class="language-flag">🇬🇧</span>
+          <div>
+            <div class="language-name">English</div>
+            <div class="language-level">Proficient</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Work Together</h3>
+          <p>
+            I'm always eager to discuss new opportunities, interesting projects, or just a friendly chat about
+            technology. Feel free to reach out!
+          </p>
+
+          <div class="contact-methods">
+            <a href="mailto:abdulrahmanamrsakr@gmail.com" class="contact-method">
+              <div class="contact-method-icon"><i class='bx bx-envelope'></i></div>
+              <div class="contact-method-info">
+                <div class="method-label">Email</div>
+                <div class="method-value">abdulrahmanamrsakr@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+201144760277" class="contact-method">
+              <div class="contact-method-icon"><i class='bx bx-phone'></i></div>
+              <div class="contact-method-info">
+                <div class="method-label">Phone</div>
+                <div class="method-value">+20 114 476 0277</div>
+              </div>
+            </a>
+            <div class="contact-method">
+              <div class="contact-method-icon"><i class='bx bx-map'></i></div>
+              <div class="contact-method-info">
+                <div class="method-label">Location</div>
+                <div class="method-value">Sadat City, Egypt</div>
+              </div>
+            </div>
+            <a href="https://github.com/abdulrahmanamr" target="_blank" rel="noopener noreferrer"
+              class="contact-method">
+              <div class="contact-method-icon"><i class='bx bxl-github'></i></div>
+              <div class="contact-method-info">
+                <div class="method-label">GitHub</div>
+                <div class="method-value">abdulrahmanamr</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal-right">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Your Message</label>
+              <textarea id="contactMessage" name="message" placeholder="Tell me about your project or idea..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <i class='bx bx-send'></i> Send Message via Gmail
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        © 2026 <span>Abdulrahman Amr</span>. Built with ❤️ and vanilla code.
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/abdulrahmanamr" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/abdulrahmanamr" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:abdulrahmanamrsakr@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       BACK TO TOP
+       ============================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+  <!-- ============================================
+       JAVASCRIPT
+       ============================================ -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
